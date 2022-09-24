@@ -129,13 +129,14 @@
     }
     input[type="radio"] {
       display: none;
-
+      
       &:checked ~ label {
         font-weight: 900;
         color: $color1;
       }
     }
     label {
+      
       user-select: none;
       cursor: pointer;
       transition: 0.1s;
@@ -144,6 +145,7 @@
         color: $color1;
       }
     }
+    
   }
 
   .table-line {

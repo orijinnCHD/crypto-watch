@@ -2,6 +2,8 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import GlobalChart from './components/GlobalChart';
 import HeaderInfos from './components/HeaderInfos';
+import Table from './components/Table';
+import UseEffectProg from './components/UseEffectProg';
 
 const App = () => {
 
@@ -17,6 +19,8 @@ const App = () => {
       <header>
         <HeaderInfos/>
         <GlobalChart coinsData={coinsData}/>
+        <Table coinsData={coinsData} />
+        <UseEffectProg/>
       </header>
     </div>
   );
