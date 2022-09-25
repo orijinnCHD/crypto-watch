@@ -41,6 +41,7 @@ const UseEffectProg = () => {
         })
     }
     
+
     useEffect(()=>{
 
 
@@ -49,6 +50,7 @@ const UseEffectProg = () => {
         //second method
         const handle = async()=>{
             try{
+
                 setUser(await getData());
                 
             }catch(e){
@@ -60,6 +62,14 @@ const UseEffectProg = () => {
 
     },[])
     
+    // const t = 2500.5;
+    // const options = {
+    //     style:"currency",
+    //     currency:"usd"
+    // }
+
+    // console.log(t.toLocaleString("en-US",options));
+
     return (
         <div>
             {
